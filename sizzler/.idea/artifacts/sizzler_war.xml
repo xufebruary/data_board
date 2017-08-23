@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="sizzler:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="sizzler.war">
+      <element id="artifact" artifact-name="sizzler:war exploded" />
+    </root>
+  </artifact>
+</component>

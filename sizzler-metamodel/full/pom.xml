@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>metamodel</artifactId>
+        <groupId>com.sizzler</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sizzler</groupId>
+    <artifactId>metamodel-full</artifactId>
+
+    <dependencies>
+        <!--<dependency>
+            <groupId>com.sizzler</groupId>
+            <artifactId>metamodel-hadoop</artifactId>
+            <version>${project.version}</version>
+        </dependency>-->
+        <dependency>
+            <groupId>com.sizzler</groupId>
+            <artifactId>metamodel-csv</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sizzler</groupId>
+            <artifactId>metamodel-excel</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sizzler</groupId>
+            <artifactId>metamodel-jdbc</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sizzler</groupId>
+            <artifactId>metamodel-pojo</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sizzler</groupId>
+            <artifactId>metamodel-json</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <!-- 编译插件 -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.2</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
